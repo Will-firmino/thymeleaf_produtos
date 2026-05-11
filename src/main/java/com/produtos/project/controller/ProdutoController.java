@@ -34,7 +34,7 @@ public class ProdutoController {
     @PostMapping("/cadastro")
     public String cadastrarProduto(Produto produto) {
         repository.save(produto);
-        return "/"; // Vai retornar para a página inicial(listar.html)
+        return "redirect:/"; // Vai retornar para a página inicial(listar.html)
     }
 
    
